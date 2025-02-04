@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/one.jpg?text=No-tiene-pelos-en-la-lengua" class="d-block w-100" alt="First Slide">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                 </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/fern.jpg?text=Me+importa+un+pepino" class="d-block w-100" alt="Second Slide">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                 </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/nypl.jpg?text=Ser-la+leche" class="d-block w-100" alt="Third Slide">
+                <div class="overlay"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                 </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row align-items-stretch">
+            <div class="col-md-8">
+                <h1>Main Content</h1>
+                <p>This is the main content area.</p>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/imgE.jpg?text=Image" class="img-fluid rounded-start" alt="Image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quia alias deleniti ex deserunt velit non, magni fugiat consequuntur fugit recusandae culpa, sint omnis iste. Quae harum minima officiis iure. text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text mt-auto"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- <h2>Sidebar</h2>
+                <p>This is the sidebar content.</p> -->
+                <div class="card">
+                    <img src="./images/imgD.jpg" class="card-img-top" alt="Mountain Landscape">
+                    <div class="card-body">
+                        <h5 class="card-title">Sidebar Card</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="row mb-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card cd h-100">
+                <img src="./images/imgA.jpg" class="card-img-top" alt="Mountain Landscape">
+                <div class="overlay"></div>
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 1</h5>
+                  <p class="card-text mt-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCard1" role="button" aria-expanded="false" aria-controls="collapseCard1">
+                    Show More
+                  </button>
+                  <div class="collapse" id="collapseCard1">
+                    <div class="card card-body mt-3 subc">
+                      More detailed information about this topic. Nulla convallis erat sit amet nulla ullamcorper, eu placerat elit condimentum.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card cd h-100">
+                <img src="./images/imgB.jpg" class="card-img-top" alt="Mountain Landscape">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 2</h5>
+                  <p class="card-text mt-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at laudantium adipisci dicta doloribus reprehenderit, cupiditate corporis vero? Hic rerum odit nisi explicabo nobis distinctio pariatur sit mollitia nulla voluptatem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCard2" role="button" aria-expanded="false" aria-controls="collapseCard2">
+                    Show More
+                  </button>
+                  <div class="collapse" id="collapseCard2">
+                    <div class="card card-body subc mt-3">
+                      More detailed information about this topic. Nulla convallis erat sit amet nulla ullamcorper, eu placerat elit condimentum.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card cd h-100">
+                <img src="./images/imgC.jpg" class="card-img-top" alt="Mountain Landscape">
+                <div class="card-body">
+                  <h5 class="card-title">Card Title 3</h5>
+                  <p class="card-text mt-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <button class="btn btn-primary" data-bs-toggle="collapse" href="#collapseCard3" role="button" aria-expanded="false" aria-controls="collapseCard3">
+                    Show More
+                  </button>
+                  <div class="collapse" id="collapseCard3">
+                    <div class="card card-body subc mt-3">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores hic maxime quaerat repellendus vero assumenda inventore placeat deserunt ducimus voluptatum, quo voluptas tenetur, amet doloremque odio expedita ipsam cum obcaecati. More detailed information about this topic. Nulla convallis erat sit amet nulla ullamcorper, eu placerat elit condimentum.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <p class="text-center">© 2023 Your Company</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/carousel-captions.js"></script>
+</body>
+</html>
